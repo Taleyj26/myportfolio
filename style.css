@@ -30,7 +30,7 @@ body{
 
 }
 /* LOADER */
-/* .loader{
+.loader{
 width: 100%;
 background: black;
 height: 100%;
@@ -103,7 +103,7 @@ animation-fill-mode: forwards;
     font-size: 2em;
     font-family: 'rische';
     font-weight: lighter;
-} */
+}
 /*cursor start*/
 [class^="cursor"]{
     position: absolute;
