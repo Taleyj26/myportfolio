@@ -41,7 +41,7 @@ body{
   text-decoration: none;
   color: #000;
   font-size: 1.2em;
-  padding: 0.5em 0.4em;
+  padding: 0.5em 0.1em;
   text-transform: capitalize;
 }
 .nav-link:hover{
@@ -252,11 +252,10 @@ padding: 15px;
   font-weight: lighter;
 }
 .newsletter form input:first-child{
-  padding: 0.8em 4em;
+  padding: 0.8em 3em;
   border: 1px solid #2E6739;
   outline: none;
   margin-top: 1.5em;
-  margin-left: 0.3em;
   border-radius: 13px 0;
 }
 
