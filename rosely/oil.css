@@ -63,7 +63,7 @@ body{
 }
 .letter{
     font-weight: bolder;
-    font-size: 4em;
+    font-size: 2.5em;
     display: inline-block;
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -262,7 +262,7 @@ body{
  
 }
 .content h1{
-    font-size: 5em;
+    font-size: 4em;
     font-weight: bolder;
     font-family: 'rische', sans-serif;
     line-height: 1em;
@@ -285,13 +285,6 @@ body{
 .content h1 span{
     color: rgb(168, 46, 46);
 }
-/* .content p{
-    width: 50%;
-    text-align: center;
-    color: white;
-    font-size: 4em;
-    text-transform: capitalize;
-} */
  /* ABOUT-PAGE */
  #about{
     width: 100%;
@@ -500,7 +493,7 @@ font-weight: lighter;
 .pro a{
     text-decoration: none;
     display: flex;
-    text-transform: uppercase;
+    text-transform: capitalize;
     align-items: center;
     justify-content: center;
     border: 1px solid rgb(116, 48, 48) ;
@@ -599,7 +592,7 @@ font-weight: lighter;
     justify-content: center;
     border: 1px solid rgb(116, 48, 48) ;
     border-radius: 8px;
-    margin: 0.8em 5em;
+    margin: 0.8em 4em;
     font-size: 1em;
     font-weight: lighter;
     padding: 10px;
@@ -624,11 +617,16 @@ font-weight: lighter;
     width: 100%;
     height: auto;
     text-align: center;
+    
 }
 .contact-head h3{
 font-size: 2.3em;
 font-weight: lighter;
+display: flex;
+    justify-content: center;
+    align-items: center;
 color: #b82b2b;
+text-align: center;
 text-transform: uppercase;
 letter-spacing: 0.3em;
 padding: 0.5em 1em 1em;

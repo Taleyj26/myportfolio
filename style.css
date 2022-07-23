@@ -115,8 +115,8 @@ animation-fill-mode: forwards;
      pointer-events: none;
  }
  .cursor-outer{
-     width: 3.1em;
-     height: 3.1em;
+     width: 2.6em;
+     height: 2.6em;
      border: 1px solid #fff;
      transition: all .08s ease-out;
  }
@@ -138,7 +138,6 @@ animation-fill-mode: forwards;
 }
 #container{
     width: 100%;
-    position: absolute;
     top: -100%;
     overflow: hidden;
 }
@@ -150,15 +149,15 @@ animation-fill-mode: forwards;
     align-items: center;
     margin-left: 0.5em;
     margin-top: 0.7em;
-    position: fixed;
-    animation: anim4 3s forwards 5s;
+    position: absolute;
+    animation: anim4 5s forwards 5s;
 }
 .menu-links{
     list-style: none;
 }
 .nav-item{
     display: inline-block;
-    margin-left: 0.3em;
+    margin-left: 0.2em;
     overflow: hidden;
 }
 .nav-link{
@@ -167,9 +166,8 @@ animation-fill-mode: forwards;
     text-decoration: none;
     color: white;
     display: flex;
-    font-size: 0.6em;
+    font-size: 0.5em;
     font-weight: 400;
-    position: relative;
     padding: 5px 0;
     text-transform: uppercase;
     transition: .3s;
@@ -239,7 +237,7 @@ left: 0;
 }
 #box2 h2{
     padding-top: 0.2em;
-    font-size: 3em;
+    font-size: 2.6em;
     line-height: 1em;
     color:rgb(44, 44, 44);
     text-transform: capitalize;
@@ -251,7 +249,7 @@ left: 0;
 #text{
     position: relative;
     left: -100%;
-    animation: anim3 3s forwards 5s;
+    animation: anim3 5s forwards 5s;
 }
 @keyframes anim3{
     from{
@@ -614,7 +612,7 @@ img{
  .menu{
     padding: 10vh 0 25vh;
     line-height: 2em;
-    font-size:2.3em;
+    font-size:2.1em;
     --offset: 20vw;
     --move-initial: calc(-25% + var(--offset));
     --move-final: calc(-50% + var(--offset));
@@ -670,7 +668,7 @@ img{
     height: auto;
     padding-top: 3em;
 }
-.contacttext{
+.context{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -681,8 +679,6 @@ img{
     text-align: left;
     height: auto;
     cursor: pointer;
-}
-.conbigtext h3{
     font-size: 2.5em;
     margin-left: 0.4em;
     font-weight: 500;
@@ -691,33 +687,38 @@ img{
     color: rgb(44, 44, 44);
     transition: .3s ease-in-out;
 }
-.conbigtext h3:hover{
+.conbigtext:hover{
     color: rgb(194, 84, 34);
 }
-.contsmalltext p{
-    font-size: 1em;
+.consmalltext{
+    font-size: 1.2em;
     font-weight: lighter;
     margin: 0.5em 0;
     text-transform: uppercase;
 }
-.con-links{
+.contact-side{
+width: 100%;
+display: flex;
+align-items: center;
+text-align: center;
+flex-direction: column;
+margin-bottom: 1em;
+}
+.contact-links{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+
 }
-.contact-link {
-    margin: 2em;
-     position: relative;
-     overflow: hidden;
-     text-transform: lowercase;
-     transition: .3s;
+.con-link{
+    margin: 0.5em 0.7em;
 }
-.contact-link a{
-    /* margin-left: 1.6em; */
+.con-link a{
     text-decoration: none;
     color: white;
-    font-size: 1.5em;
-    font-weight: 700;
+ font-size: 0.7em;
 }
-.contact-link:before{
+.con-link a:before{
     content: '';
     position: absolute;
     top: 0;
@@ -726,8 +727,8 @@ img{
     height: 2px;
     background: white;
     transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    }
-    .contact-link:after{
+}
+.con-link a:after{
     content: '';
     position: absolute;
     bottom: 0;
@@ -736,19 +737,41 @@ img{
     height: 2px;
     background: white;
     transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    }
- .con-link:hover{
-    color: rgb(187, 53, 53);
-    }
-    .con-link2:hover{
-        color: rgb(27, 167, 177);
-        }
-    .contact-link:hover:before{
+}
+.con-link a:hover{
+    color: rgb(134, 134, 134);
+}
+.con-link a:hover:before{
     right: 0;
-    }
-    .contact-link:hover:after{
-    left: 0;
-    }
+}
+.con-link a:hover:after{
+left: 0;
+}
+.social{
+    color: white;
+    text-transform: capitalize;
+    margin-top: 1.5em;
+}
+
+.social a{
+    color: white;
+    font-size: 1em;
+    padding-left: 0.8em;
+}
+.fa-whatsapp:hover{
+    color: rgb(40, 192, 65);
+}
+.fa-instagram:hover{
+    color: rgb(192, 58, 40);
+}
+.fa-linkedin:hover{
+    color: rgb(40, 119, 192);
+}
+.fa-twitter:hover{
+    color: rgb(40, 149, 192);
+
+}
+
 
     .slidetext h2{
         position: relative;
@@ -758,7 +781,6 @@ img{
         width: 100%;
         margin-top: 15px;
         pointer-events: none;
-        text-shadow: calc(var(--x)) 50px 0 rgba(255,255,255,0.1);
         transform: translateX(calc(0% - var(--x) * var(--i)));
         white-space: nowrap;
     }
@@ -860,20 +882,21 @@ img{
     height: auto;
     line-height: 50px;
 }
-.conbigtext h3{
+.conbigtext{
     font-size: 6em;
     margin-top: 1.5em;
     margin-left: 0.4em;
 }
-.contsmalltext p{
+.contsmalltext{
     font-size: 1em;
 }
 
-.contact-link a{
-    text-decoration: none;
-    color: white;
-    font-size: 30px;
+.con-link{
+    font-size: 1.5em;
     font-weight: 700;
+}
+.social a{
+    font-size: 1.5em;
 }
 /*slidetextquey*/
 .slidetext h2{
