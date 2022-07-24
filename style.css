@@ -554,7 +554,7 @@ word-spacing: 3px;
 font-size: 3em;
 font-weight: 500;
 margin-top: 2em;
-margin-right: 0.2em;
+margin-right: 0.4em;
 text-transform: uppercase;
 color: rgb(44, 44, 44);
 transition: .3s ease-in-out;
@@ -667,9 +667,11 @@ img{
     width: 100%;
     height: auto;
     padding-top: 3em;
+    overflow-x: hidden;
 }
 .context{
     display: flex;
+    overflow-x: hidden;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -680,7 +682,7 @@ img{
     height: auto;
     cursor: pointer;
     font-size: 2.5em;
-    margin-left: 0.4em;
+    margin-left: 0.1em;
     font-weight: 500;
     margin-bottom: 0.5em;
     text-transform: uppercase;
@@ -697,86 +699,62 @@ img{
     text-transform: uppercase;
 }
 .contact-side{
-width: 100%;
-display: flex;
-align-items: center;
-text-align: center;
-flex-direction: column;
-margin-bottom: 1em;
-}
-.contact-links{
+    width: 90%;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-
-}
-.con-link{
-    margin: 0.5em 0.7em;
-}
-.con-link a{
-    text-decoration: none;
-    color: white;
- font-size: 0.7em;
-}
-.con-link a:before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 100%;
-    width: 50%;
-    height: 2px;
-    background: white;
-    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-.con-link a:after{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 100%;
-    width: 50%;
-    height: 2px;
-    background: white;
-    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-.con-link a:hover{
-    color: rgb(134, 134, 134);
-}
-.con-link a:hover:before{
-    right: 0;
-}
-.con-link a:hover:after{
-left: 0;
-}
-.social{
-    color: white;
-    text-transform: capitalize;
-    margin-top: 1.5em;
-}
-
-.social a{
-    color: white;
-    font-size: 1em;
-    padding-left: 0.8em;
-    transition: .3s ease-in-out;
-}
-.fa-whatsapp:hover{
-    color: rgb(40, 192, 65);
-}
-.fa-instagram:hover{
-    color: rgb(192, 58, 40);
-}
-.fa-linkedin:hover{
-    color: rgb(40, 119, 192);
-}
-.fa-twitter:hover{
-    color: rgb(40, 149, 192);
-
-}
-.fa-github:hover{
-    color: rgb(49, 54, 102);
-
-}
-
+    text-align: center;
+    flex-direction: column;
+    margin: 0 0.5em 1em 0.5em;
+    overflow-x: hidden;
+    }
+    .contact-links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .con-link{
+        margin: 0.5em 0.5em;
+    }
+    .con-link a{
+        text-decoration: none;
+        color: white;
+     font-size: 0.7em;
+    }
+    .con-link a{
+        text-decoration: none;
+        color: white;
+     font-size: 0.7em;
+    }
+    .con-link a:hover{
+        color: rgb(134, 134, 134);
+    }
+    .social{
+        color: white;
+        text-transform: capitalize;
+        margin-top: 1.5em;
+    }
+    
+    .social a{
+        color: white;
+        font-size: 1em;
+        padding-left: 0.8em;
+        transition: .3s ease-in-out;
+    }
+    .fa-whatsapp:hover{
+        color: rgb(40, 192, 65);
+    }
+    .fa-instagram:hover{
+        color: rgb(192, 58, 40);
+    }
+    .fa-linkedin:hover{
+        color: rgb(40, 119, 192);
+    }
+    .fa-twitter:hover{
+        color: rgb(40, 149, 192);
+    }
+    .fa-github:hover{
+        color: rgb(49, 54, 102);
+    }
 
     .slidetext h2{
         position: relative;
