@@ -144,6 +144,28 @@ p{
 .home:hover{
 color: grey;
 }
+.contact-side{
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-side a{
+    text-align: center;
+    padding: 0.6em 1.5em;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: bolder;
+    color: black;
+    text-transform: capitalize;
+    border-radius: 5em;
+    border: 2px solid black;
+    transition: .3s ease-in-out;
+}
+.contact-side a:hover{
+    color: grey;
+    border: 2px solid grey;
+}
 
 @media screen and (max-width:960px){
     .design-sec .image{
